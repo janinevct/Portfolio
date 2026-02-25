@@ -1,60 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAA0A0; /* Pastel Red */
+    color: #947d7d;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 70px 20px 40px 20px;
+}
+
+.welcome {
+    font-size: 22px;
+}
+
+.name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 75px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.portfolio {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Section Cards */
+.section {
+    background-color: #FFF5EE; /* Seashell */
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+.section h2 {
+    text-align: center;
+    color: #FAA0A0;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #FAA0A0;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+</style>
 </head>
 
 <body>
 
-
-    <h1>Hi! I'm Janine Victoria B. Decena</h1>
-    <p>BSIT Student | Web Developer | Programmer</p>
-
-    <hr>
+<div class="header">
 
 
+    <h1 class="name">Janine Victoria’s</h1>
+    <h1 class="portfolio">Portfolio</h1>
+</div>
+
+<div class="section">
     <h2>About Me</h2>
-    <p>
-        Hello! I am a first-year BSIT student who is passionate about 
-         web development and learning new technologies.
-    </p>
+    <p>Hello! I am a first-year Bachelor of Science in Information Technology (BSIT) student who is passionate about web development and continuously learning new technologies. I enjoy exploring how websites are designed and built, from structuring content with HTML to enhancing user experience through styling and functionality. As a beginner in the IT field, I am eager to improve my skills, take on new challenges, and grow both technically and creatively. I am motivated to keep learning, building projects, and expanding my knowledge in the ever-evolving world of technology.</p>
+</div>
 
-    <hr>
-
-
+<div class="section">
     <h2>Skills</h2>
     <ul>
         <li>HTML</li>
         <li>C Programming</li>
         <li>Basic Java</li>
     </ul>
+</div>
 
-    <hr>
-
-
+<div class="section">
     <h2>Projects</h2>
+    <p><strong>Project 1: Portfolio Website</strong><br>
+    A simple personal website created using HTML.</p>
 
-    <p>
-        Here are some of the projects I've worked on
-    </p>
+    <p><strong>Project 2: Simple Java Game</strong><br>
+    A rock paper scissors game built using Java.</p>
+</div>
 
-    <h3>Project 1: Portfolio Website</h3>
-    <p>A simple personal website created using HTML.</p>
-
-
-    <hr>
-
-
+<div class="section">
     <h2>Education</h2>
-    <p>Bachelor of Science in Information Technology</p>
-    <p>Bicol University</p>
+    <p>2022-2024 Senior High School at Daraga National High School</p>
+    <p>Bachelor of Science in Information Technology at Bicol University</p>
+</div>
 
-    <hr>
-
+<div class="section">
     <h2>Contact Me</h2>
     <p>Email: janinevictoriadecena24@bicol-u.edu.ph</p>
-    <p>GitHub: github.com/janinevct</p>
+    <p>GitHub: 
+        <a href="https://github.com/janinevct" target="_blank">
+        github.com/janinevct</a></p>
+</div>
+
+
 
 </body>
 </html>
