@@ -2,132 +2,87 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>My Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janine Victoria | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
-<style>
+<!-- CSS File -->
+<link rel="stylesheet" href="style.css">
 
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFF5EE; /* Seashell background */
-    color: #5a3e3e;
-}
-
-/* Header */
-.header {
-    text-align: center;
-    padding: 70px 20px 40px 20px;
-}
-
-.welcome {
-    font-size: 22px;
-    color: #FAA0A0;
-}
-
-.name {
-    font-family: 'Great Vibes', cursive;
-    font-size: 75px;
-    color: #FAA0A0;
-    margin: 10px 0;
-}
-
-.portfolio {
-    font-size: 26px;
-    font-weight: 600;
-    color: #FAA0A0;
-}
-
-/* Section Cards */
-.section {
-    background-color: #FAA0A0; /* Light Pink boxes */
-    margin: 30px auto;
-    padding: 30px;
-    max-width: 800px;
-    border-radius: 25px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease;
-    color: white; /* make text readable */
-}
-
-.section:hover {
-    transform: scale(1.02);
-}
-
-.section h2 {
-    text-align: center;
-    color: white;
-    margin-bottom: 15px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-a {
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-
-
-</style>
 </head>
-
 <body>
 
-<div class="header">
-    <h1 class="welcome">Welcome to</h1>
+<header class="header">
+    <h1 class="welcome">Hi! Welcome to</h1>
     <h1 class="name">Janine Victoria’s</h1>
-    <h1 class="portfolio">Portfolio</h1>
-</div>
+    <h2 class="portfolio">Personal Portfolio</h2>
+    <img src="stars.png" alt="stars" width="50" 
+     style="position:absolute; top:50px; left:150px;">
+    <img src="stars.png" alt="stars" width="40" 
+     style="position:absolute; top:10px; left:110px;">
+        <img src="stars.png" alt="stars" width="45" 
+     style="position:absolute; top:90px; left:100px;">
+</header>
 
-<div class="section">
-    <h2>About Me</h2>
-    <p>Hello! I am a first-year Bachelor of Science in Information
-       Technology (BSIT) student who is passionate about web
-       development and creating beautiful, functional websites.</p>
-</div>
+<section class="section about-section">
+    <h2 class="section-title">About Me</h2>
 
-<div class="section">
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>C Programming</li>
-        <li>Basic Java</li>
-    </ul>
-</div>
+    <div class="about-container">
+        <div class="image-wrapper">
+            <img src="me.jpg" alt="Janine Victoria" class="about-img">
+        </div>
 
-<div class="section">
-    <h2>Projects</h2>
-    <p><strong>Project 1: Portfolio Website</strong><br>
-    A simple personal website created using HTML.</p>
+        <div class="about-text">
+            <p>
+                Hello! I am a first-year Bachelor of Science in Information
+                Technology (BSIT) student who is passionate about web
+                development and continuously learning new technologies.
+            </p>
 
-    <p><strong>Project 2: Simple Java Game</strong><br>
-    A rock paper scissors game built using Java.</p>
-</div>
+            <p>
+                I enjoy exploring how websites are thoughtfully designed
+                and built — from structuring content with HTML to enhancing
+                user experience through elegant styling and functionality.
+            </p>
 
-<div class="section">
-    <h2>Education</h2>
-    <p>Bachelor of Science in Information Technology<br>
-    Bicol University</p>
-</div>
+            <p>
+                As a beginner in the IT field, I am eager to improve my
+                skills, embrace new challenges, and grow both technically
+                and creatively in this ever-evolving digital world.
+            </p>
+        </div>
+    </div>
+</section>
 
-<div class="section">
-    <h2>Contact Me</h2>
+
+
+<section class="section">
+    <h2 class="section-title">Projects</h2>
+    <p><strong>Portfolio Website</strong><br>
+    A responsive personal website built using HTML and CSS.</p>
+
+    <p><strong>Rock Paper Scissors Game</strong><br>
+    A simple interactive game developed using Java.</p>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Education</h2>
+    <p>
+        Bachelor of Science in Information Technology <br>
+        Bicol University
+    </p>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Contact</h2>
     <p>Email: janinevictoriadecena24@bicol-u.edu.ph</p>
-    <p>GitHub: 
+    <p>GitHub:
         <a href="https://github.com/janinevct" target="_blank">
-        github.com/janinevct</a></p>
-</div>
-
-
+        github.com/janinevct</a>
+    </p>
+</section>
 
 </body>
 </html>
