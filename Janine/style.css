@@ -32,38 +32,72 @@ body{
     letter-spacing: 3px;
 }
 
+
+
+
+
+
+
 .cam {
     position: absolute;
     width: 200px;
-
     left: 400px;    
-    bottom: 2px;   
+    top: 1150px;   
 }
-
-.me2 {
-    position: absolute;
-    width: 500px;
-
-    left: 30px;    
-    top: 1px;   
-}
-
 
 .heart {
     position: absolute;
-    width:150px;
-
+    width: 150px;
     right: 438px;    
     bottom: 270px;   
 }
 
 .bow {
     position: absolute;
-    width:300px;
-
+    width: 300px;
     left: 200px;    
     top: 900px;   
 }
+
+.flower2 {
+    position: absolute;
+    width: 390px;
+    left: 0px;    
+    top: 1350px;   
+}
+
+
+
+.baking {
+    position: absolute;
+    width: 400px;
+    right: 10px;    
+    top: 1800px;   
+}
+
+.envelope1 {
+    position: absolute;
+    width: 300px;
+    right: 40px;    
+    top: 2700px;   
+
+}
+
+.ribbon2 {
+    position: absolute;
+    width: 500px;
+    left: 180px;    
+    top: 2420px;   
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -107,6 +141,97 @@ body{
     font-weight: 300;
 }
 
+.hobbies-container {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+
+.hobbies-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: justify;
+    font-weight: 300;
+    color: #5C4033;
+}
+
+
+.hobbies-images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.hobbies-images img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+
+.strengths-card {
+    background-color: #b99b8c;
+    color: #fdf0ec;
+    border-radius: 16px;
+    padding: 40px 50px;
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: justify;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    border-left: 5px solid #7a4f3a;
+    padding-left: 30px;
+}
+
+.project-image {
+    flex-shrink: 0;
+    width: 280px;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(90, 58, 46, 0.2);
+}
+
+.project-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #5C4033;
+    margin-bottom: 16px;
+}
+
+.project-info p {
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 300;
+    color: #5C4033;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
@@ -119,5 +244,13 @@ body{
 
     .about-img {
         width: 200px;
+    }
+
+    .hobbies-container {
+        flex-direction: column;
+    }
+
+    .hobbies-text {
+        text-align: center;
     }
 }
