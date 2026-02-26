@@ -40,6 +40,14 @@ body{
     bottom: 2px;   
 }
 
+.me2 {
+    position: absolute;
+    width: 500px;
+
+    left: 30px;    
+    top: 1px;   
+}
+
 
 .heart {
     position: absolute;
