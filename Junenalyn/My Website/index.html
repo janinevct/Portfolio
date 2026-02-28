@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Junie Verse</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junie Verse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- intro first page -->
+  <!-- Navigation -->
+  <header class="site-header">
+    <a href="#home" class="logo" aria-label="Junie verse home">
+      <img src="menu.png" alt="" class="logo-img">
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about-me" class="nav-link">about me.</a>
+      <a href="#love-ones" class="nav-link">love ones</a>
+      <a href="#hobbies" class="nav-link">hobbies</a>
+      <a href="#my-favorites" class="nav-link">my favorites</a>
+      <a href="#contact" class="nav-link nav-link-contact" aria-label="Contact me">
+        <img src="contact.png" alt="" class="nav-contact-icon">
+      </a>
+    </nav>
+  </header>
 
-<section class="hero">
-    
-    <img src="firstpage.png" class="background-img" alt="First Page Background">
-
-    <div class="center-text">
-        <h1>junie<br>verse.</h1>
-        <h2>junenalyn lotino</h2>
-        <p>BSIT 2 C</p>
+  <!-- Hero / First page -->
+  <section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <img src="firstpage.png" class="hero-collage-img" alt="" role="presentation">
+    <div class="hero-content">
+      <img src="junieverse.png" alt="junie verse. welcome!" class="hero-title-img">
     </div>
+  </section>
 
-</section>
-
-
-<!-- about me -->
-
-<section class="about">
-
-    <img src="secondpage.png" class="background-img" alt="Second Page Background">
-
-    <div class="about-content">
-        <h2>about me.</h2>
-
-        <ul>
-            <li>19 years old</li>
-            <li>blink, army, carat</li>
-            <li>loves matcha</li>
-            <li>loves flowers</li>
-        </ul>
-
-        <p>
-            i am the youngest among seven siblings. 
-            i'm an adventurous person who loves traveling,
-            running, attending concerts, and hiking.
-            i deeply value my family, friends, and the little
-            things in life.
-        </p>
+  <!-- Placeholder sections for future pages (linked from nav) -->
+  <section id="about-me" class="page-section">
+    <div class="section-inner">
+      <h2>about me.</h2>
+      <p>This section will be filled with your about content.</p>
     </div>
+  </section>
+  <section id="love-ones" class="page-section">
+    <div class="section-inner">
+      <h2>love ones</h2>
+      <p>This section will be filled with your love ones content.</p>
+    </div>
+  </section>
+  <section id="hobbies" class="page-section">
+    <div class="section-inner">
+      <h2>hobbies</h2>
+      <p>This section will be filled with your hobbies content.</p>
+    </div>
+  </section>
+  <section id="my-favorites" class="page-section">
+    <div class="section-inner">
+      <h2>my favorites</h2>
+      <p>This section will be filled with your favorites content.</p>
+    </div>
+  </section>
+  <section id="contact" class="page-section">
+    <div class="section-inner">
+      <h2>contact me!</h2>
+      <p>This section will be filled with your contact form or details.</p>
+    </div>
+  </section>
 
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
