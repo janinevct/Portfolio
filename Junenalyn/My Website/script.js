@@ -6,7 +6,7 @@
   const sections = document.querySelectorAll('section[id]');
   const heroTitleImg = document.querySelector('.hero-title-img');
 
-  // ----- Header scroll effect -----
+  // ----- for header and scroll effects -----
   function onScroll() {
     if (window.scrollY > 40) {
       header.classList.add('scrolled');
@@ -51,7 +51,6 @@
     });
   });
 
-  // ----- Hero entrance animation -----
   function initHeroAnimation() {
     if (heroTitleImg) heroTitleImg.style.opacity = '0';
 
@@ -63,7 +62,6 @@
     });
   }
 
-  // ----- Listeners -----
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('load', () => {
     setActiveNavLink();

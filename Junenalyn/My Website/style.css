@@ -320,7 +320,6 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--bg-pink);
-  border-top: 1px solid rgba(74, 99, 74, 0.06);
 }
 
 .section-inner {
