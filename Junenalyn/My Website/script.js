@@ -17,7 +17,7 @@
     setActiveNavLink();
   }
 
-  // active mav link based on scroll position
+  // active nav link based on scroll position 
   function setActiveNavLink() {
     const scrollY = window.scrollY;
     const viewportMid = scrollY + window.innerHeight * 0.4;
@@ -38,7 +38,7 @@
     });
   }
 
-  // smooth scroll for nav links
+  // smooth scroll for nav links (same page) 
   navLinks.forEach((link) => {
     link.addEventListener('click', function (e) {
       const href = this.getAttribute('href');
@@ -52,7 +52,7 @@
     });
   });
 
-  // subtle hover interaction for main nav text links 
+  // subtle hover interaction for main nav text links
   navLinks.forEach((link) => {
     // skip contact icon link
     if (link.classList.contains('nav-link-contact')) return;
@@ -68,7 +68,7 @@
     });
   });
 
-  // for blogs in the nav
+  // subtle interaction for BLOGS logo link
   if (blogLogoLink) {
     blogLogoLink.addEventListener('mouseenter', () => {
       blogLogoLink.classList.add('logo-blog-link-hover');
