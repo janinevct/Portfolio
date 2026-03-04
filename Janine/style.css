@@ -1,256 +1,288 @@
-body{
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #fdeaea;
-    color: #4a3f3f; 
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdeaea;
+  color: #4a3f3f;
 }
 
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  background-color: rgba(253, 234, 234, 0.92);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(180, 100, 110, 0.1);
+  box-sizing: border-box;
+}
+
+
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #b8576c;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-blog-btn {
+  background-color: #b8576c;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-blog-btn:hover {
+  background-color: #9e4459;
+}
+
+
 .header {
-    text-align: center;
-    padding: 250px 20px 200px;
-    position: relative;
+  text-align: center;
+  padding: 250px 20px 200px;
+  position: relative;
 }
 
 .welcome {
-    font-size: 20px;
-    font-weight: 300;
-    color: #c46b7b;
-    letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #c46b7b;
+  letter-spacing: 2px;
 }
 
 .name {
-    font-family: 'Playfair Display', serif;
-    font-size: 65px;
-    color: #b8576c;
-    margin: 10px 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 65px;
+  color: #b8576c;
+  margin: 10px 0;
 }
 
 .portfolio {
-    font-size: 20px;
-    font-weight: 400;
-    color: #c46b7b;
-    letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #c46b7b;
+  letter-spacing: 3px;
 }
-
-
-
-
-
 
 
 .cam {
-    position: absolute;
-    width: 200px;
-    left: 400px;    
-    top: 1150px;   
+  position: absolute;
+  width: 200px;
+  left: 400px;
+  top: 1150px;
 }
 
 .heart {
-    position: absolute;
-    width: 150px;
-    right: 438px;    
-    bottom: 270px;   
+  position: absolute;
+  width: 150px;
+  right: 438px;
+  bottom: 270px;
 }
-
-.bow {
-    position: absolute;
-    width: 300px;
-    left: 200px;    
-    top: 900px;   
-}
-
-.flower2 {
-    position: absolute;
-    width: 390px;
-    left: 0px;    
-    top: 1350px;   
-}
-
-
-
-.baking {
-    position: absolute;
-    width: 400px;
-    right: 10px;    
-    top: 1800px;   
-}
-
-.envelope1 {
-    position: absolute;
-    width: 300px;
-    right: 40px;    
-    top: 2700px;   
-
-}
-
-.ribbon2 {
-    position: absolute;
-    width: 500px;
-    left: 180px;    
-    top: 2420px;   
-}
-
-
-
-
-
-
-
-
-
 
 
 
 .section {
-    margin: 80px auto;
-    padding: 60px 40px;
-    max-width: 1000px;
-    color: #5C4033; 
+  margin: 80px auto;
+  padding: 60px 40px;
+  max-width: 1000px;
+  color: #5c4033;
 }
 
 .section-title {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    margin-bottom: 40px;
-    letter-spacing: 1px;
-    color: #5C4033;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  color: #5c4033;
 }
 
+
+
 .about-container {
-    display: flex;
-    align-items: center;
-    gap: 60px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
 .image-wrapper {
-    background-color: #f6e7e7;
-    padding: 20px;
-    border-radius: 25px;
+  background-color: #f6e7e7;
+  padding: 20px;
+  border-radius: 25px;
 }
 
 .about-img {
-    width: 260px;
-    border-radius: 15px;
+  width: 260px;
+  border-radius: 15px;
+}
+
+.bow {
+  position: absolute;
+  width: 300px;
+  left: 200px;
+  top: 900px;
 }
 
 .about-text {
-    font-size: 17px;
-    line-height: 1.9;
-    text-align: justify;
-    font-weight: 300;
+  font-size: 17px;
+  line-height: 1.9;
+  text-align: justify;
+  font-weight: 300;
 }
+
+
 
 .hobbies-container {
-    display: flex;
-    gap: 48px;
-    align-items: flex-start;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
 }
 
+.flower2 {
+  position: absolute;
+  width: 390px;
+  left: 0;
+  top: 1350px;
+}
+
+.baking {
+  position: absolute;
+  width: 400px;
+  right: 10px;
+  top: 1800px;
+}
 
 .hobbies-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 17px;
-    line-height: 1.9;
-    text-align: justify;
-    font-weight: 300;
-    color: #5C4033;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 17px;
+  line-height: 1.9;
+  text-align: justify;
+  font-weight: 300;
+  color: #5c4033;
 }
 
-
 .hobbies-images {
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
 }
 
 .hobbies-images img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
 }
 
+
+
+.envelope1 {
+  position: absolute;
+  width: 300px;
+  right: 40px;
+  top: 2700px;
+}
+
+.ribbon2 {
+  position: absolute;
+  width: 500px;
+  left: 180px;
+  top: 2420px;
+}
 
 .strengths-card {
-    background-color: #b99b8c;
-    color: #fdf0ec;
-    border-radius: 16px;
-    padding: 40px 50px;
-    font-size: 17px;
-    line-height: 1.9;
-    text-align: justify;
-    font-weight: 300;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  background-color: #b99b8c;
+  color: #fdf0ec;
+  border-radius: 16px;
+  padding: 40px 50px;
+  font-size: 17px;
+  line-height: 1.9;
+  text-align: justify;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+
+
 .project-card {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    border-left: 5px solid #7a4f3a;
-    padding-left: 30px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  border-left: 5px solid #7a4f3a;
+  padding-left: 30px;
 }
 
 .project-image {
-    flex-shrink: 0;
-    width: 280px;
+  flex-shrink: 0;
+  width: 280px;
 }
 
 .project-image img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(90, 58, 46, 0.2);
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(90, 58, 46, 0.2);
 }
 
 .project-info h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    color: #5C4033;
-    margin-bottom: 16px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #5c4033;
+  margin-bottom: 16px;
 }
 
 .project-info p {
-    font-size: 16px;
-    line-height: 1.9;
-    font-weight: 300;
-    color: #5C4033;
-    margin-bottom: 12px;
-    text-align: justify;
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: 300;
+  color: #5c4033;
+  margin-bottom: 12px;
+  text-align: justify;
 }
-
-
-
-
 
 
 
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
+  .navbar {
+    padding: 12px 20px;
+  }
 
-    .about-text {
-        text-align: center;
-    }
 
-    .about-img {
-        width: 200px;
-    }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .hobbies-container {
-        flex-direction: column;
-    }
+  .about-text {
+    text-align: center;
+  }
 
-    .hobbies-text {
-        text-align: center;
-    }
+  .about-img {
+    width: 200px;
+  }
+
+  .hobbies-container {
+    flex-direction: column;
+  }
+
+  .hobbies-text {
+    text-align: center;
+  }
 }
