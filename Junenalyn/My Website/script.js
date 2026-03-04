@@ -5,6 +5,7 @@
   const navLinks = document.querySelectorAll('.main-nav .nav-link');
   const sections = document.querySelectorAll('section[id]');
   const heroTitleImg = document.querySelector('.hero-title-img');
+  const blogLogoLink = document.querySelector('.logo-blog-link');
 
   // ----- for header and scroll effects -----
   function onScroll() {
@@ -50,6 +51,35 @@
       }
     });
   });
+
+  // ----- Subtle hover interaction for main nav text links -----
+  navLinks.forEach((link) => {
+    // skip contact icon link
+    if (link.classList.contains('nav-link-contact')) return;
+
+    link.addEventListener('mouseenter', () => {
+      link.classList.add('nav-link-hover');
+    });
+    link.addEventListener('mouseleave', () => {
+      link.classList.remove('nav-link-hover');
+    });
+    link.addEventListener('mousedown', () => {
+      link.classList.remove('nav-link-hover');
+    });
+  });
+
+  // ----- Subtle interaction for BLOGS logo link -----
+  if (blogLogoLink) {
+    blogLogoLink.addEventListener('mouseenter', () => {
+      blogLogoLink.classList.add('logo-blog-link-hover');
+    });
+    blogLogoLink.addEventListener('mouseleave', () => {
+      blogLogoLink.classList.remove('logo-blog-link-hover');
+    });
+    blogLogoLink.addEventListener('mousedown', () => {
+      blogLogoLink.classList.remove('logo-blog-link-hover');
+    });
+  }
 
   function initHeroAnimation() {
     if (heroTitleImg) heroTitleImg.style.opacity = '0';

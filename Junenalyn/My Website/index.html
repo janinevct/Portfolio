@@ -11,12 +11,14 @@
 
   <!-- for navv -->
   <header class="site-header">
-    <a href="#home" class="logo" aria-label="Junie verse home">
-      <img src="menu.png" alt="" class="logo-img">
-    </a>
+    <div class="logo-group">
+      <a href="#home" class="logo" aria-label="Junie verse home">
+        <img src="menu.png" alt="" class="logo-img">
+      </a>
+      <a href="blogs.html" class="logo-blog-link">BLOGS</a>
+    </div>
     <nav class="main-nav" aria-label="Main navigation">
-      <a href="#about-me" class="nav-link">about me.</a>
-      <a href="#love-ones" class="nav-link">love ones</a>
+      <a href="#about-me" class="nav-link">about me</a>
       <a href="#hobbies" class="nav-link">hobbies</a>
       <a href="#my-favorites" class="nav-link">my favorites</a>
       <a href="#contact" class="nav-link nav-link-contact" aria-label="Contact me">
@@ -62,10 +64,21 @@
       </div>
     </div>
   </section>
-  <section id="love-ones" class="page-section">
-    <div class="section-inner">
-      <h2>love ones</h2>
-      <p>This section will be filled with your love ones content.</p>
+  <section id="love-ones" class="page-section love-ones">
+    <div class="love-ones-bg" aria-hidden="true"></div>
+    <div class="love-ones-inner">
+      <div class="love-ones-col">
+        <img src="family.png" alt="My Family" class="love-ones-pic">
+        <img src="familydes.png" alt="" class="love-ones-des" role="presentation">
+      </div>
+      <div class="love-ones-col">
+        <img src="friends.png" alt="Friends" class="love-ones-pic">
+        <img src="friendsdes.png" alt="" class="love-ones-des" role="presentation">
+      </div>
+      <div class="love-ones-col">
+        <img src="mybaby.png" alt="My love" class="love-ones-pic">
+        <img src="mybabydes.png" alt="" class="love-ones-des" role="presentation">
+      </div>
     </div>
   </section>
   <section id="hobbies" class="page-section">
@@ -74,16 +87,43 @@
       <p>This section will be filled with your hobbies content.</p>
     </div>
   </section>
-  <section id="my-favorites" class="page-section">
-    <div class="section-inner">
-      <h2>my favorites</h2>
-      <p>This section will be filled with your favorites content.</p>
+  <section id="my-favorites" class="page-section favorites-section">
+    <div class="favorites-tray-wrap">
+      <img src="tray.png" alt="My Favorites tray" class="favorites-tray" role="presentation">
+      <div class="favorites-items">
+        <img src="ticket.png" alt="Plane ticket" class="favorites-item item-ticket">
+        <img src="instax.png" alt="Camera" class="favorites-item item-instax">
+        <img src="bag.png" alt="Bag" class="favorites-item item-bag">
+        <img src="jacket.png" alt="Jacket" class="favorites-item item-jacket">
+        <img src="adidas.png" alt="Shoes" class="favorites-item item-adidas">
+        <img src="flowers.png" alt="Bouquet" class="favorites-item item-flowers">
+        <img src="chance.png" alt="Perfume" class="favorites-item item-chance">
+        <img src="aipods.png" alt="AirPods" class="favorites-item item-aipods">
+        <img src="matcha.png" alt="Matcha drink" class="favorites-item item-matcha">
+      </div>
     </div>
   </section>
-  <section id="contact" class="page-section">
-    <div class="section-inner">
-      <h2>contact me!</h2>
-      <p>This section will be filled with your contact form or details.</p>
+  <section id="contact" class="page-section contact-section">
+    <div class="contact-inner">
+      <img src="connect.png" alt="Let's connect!" class="contact-title-img">
+      <div class="contact-icons">
+        <a href="mailto:junenalynllona.lotino24@bicol-u.edu.ph" class="contact-icon-link" aria-label="Email">
+          <img src="email.png" alt="" class="contact-icon" role="presentation">
+          <span class="contact-icon-label">junenalynllona.lotino24@bicol-u.edu.ph</span>
+        </a>
+        <a href="#" class="contact-icon-link" aria-label="Facebook">
+          <img src="facebook.png" alt="" class="contact-icon" role="presentation">
+          <span class="contact-icon-label">Junenalyn Lotino</span>
+        </a>
+        <a href="#" class="contact-icon-link" aria-label="Instagram">
+          <img src="insta.png" alt="" class="contact-icon" role="presentation">
+          <span class="contact-icon-label">@junenalyn_l</span>
+        </a>
+        <a href="#" class="contact-icon-link" aria-label="TikTok">
+          <img src="tiktok.png" alt="" class="contact-icon" role="presentation">
+          <span class="contact-icon-label">juniverse</span>
+        </a>
+      </div>
     </div>
   </section>
 
